@@ -21,7 +21,9 @@ const tecla2 = document.getElementById('key2');
 
 
 document.addEventListener('keydown', function (event) {
-    tecla2.classList.add('cubo');
+    if (event.key === 'q' || event.key === 'w' || event.key === 'e') {
+        tecla2.classList.add('cubo');
+    }
     if (event.key === 'q') {
         tecla2.style.backgroundColor = 'purple';
     } else if (event.key === 'w') {
